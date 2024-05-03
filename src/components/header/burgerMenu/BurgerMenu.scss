@@ -1,0 +1,58 @@
+.burger {
+   display: none;
+   z-index: 1000;
+   @media (max-width: 48.249rem) {
+      display: block;
+   }
+
+   &__icon {
+   }
+
+   &__header {
+      display: grid;
+      grid-template-columns: 6.25rem 1fr 1.25rem;
+      // margin-bottom: 3.125rem;
+   }
+   &__main {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      flex: 1 1 auto;
+   }
+
+   &__footer {
+      display: flex;
+      column-gap: 1.5rem;
+      justify-content: end;
+   }
+
+   &__img {
+   }
+
+   &__close {
+      grid-column: 3;
+   }
+
+   &__overlay {
+      display: flex;
+      flex-direction: column;
+      padding: 1.25rem;
+      overflow: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // background: ;
+      transition: all 0.3s;
+      z-index: 1000;
+   }
+
+   &__link {
+   }
+}
+
+.hidden {
+   left: 100%;
+   transition: all 0.3s;
+}
